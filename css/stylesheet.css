@@ -74,7 +74,7 @@ img {
 
 .main-nav a {
   font-size: 1em;
-  font-weight: 1000;
+  font-weight: 700;
   color: black;
   text-transform: uppercase;
 }
@@ -378,11 +378,8 @@ img {
 
   .profile-image {
     float: right;
-    width: 180px;
-    object-position:  50% 50%;
-    object-fit: none;
+    width: 400px;
 
-    left: 35%;
 
 
   }
