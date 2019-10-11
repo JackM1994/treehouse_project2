@@ -1,0 +1,403 @@
+/* =================================
+  Base Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.6;
+  color: white;
+  background: #0C374D;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h1,
+h3,
+a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+.name {
+  font-size: 1.9em;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+.main-nav {
+  background: #0C374D;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.main-nav li {
+  text-align: center;
+  background: #FFF;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: 1em;
+  font-weight: 1000;
+  color: black;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #BCBEC0;
+}
+
+/* ----Layout Containers ---- */
+
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: 1.5em;
+}
+
+.introduction {
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 5px 10px 15px 10px;
+}
+
+.profile-image {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+}
+
+.introduction {
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #f8f929;
+
+  ;
+}
+/* ---- Mid Section ---- */
+
+.skills {
+  background: #3C6478;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills h2 {
+  color: #f8f939;
+}
+
+.html-sign,
+.css-sign,
+.java-sign,
+.python-sign {
+  width: 250px;
+  height: 250px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.container {
+  background: linear-gradient(45deg, #0D3D56, #3C6478);
+  width: 100%;
+}
+
+.portfolio {
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.col {
+  color: #fff;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 20px;
+
+}
+
+.col h2 {
+  padding-top: 15px;
+  padding-bottom: 10px
+}
+
+.col p {
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  margin: 30px;
+  padding: 10px 40px 20px;
+  max-width: 100%;
+  text-align: center;
+  color: #f8f929;
+  border-bottom: 4px solid #ccc;
+  font-size: 1em;
+
+}
+
+/* ---Footer ----*/
+
+.main-footer {
+  width: 100%;
+  padding: 20px 0 40px 20px;
+  margin-top: 50px;
+  color: #fff;
+}
+.main-footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-footer p {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 25px;
+  font-size: 1em;
+  color: #f8f929
+}
+
+.main-footer .name{
+  padding-top: 15px;
+  float: left;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  padding-bottom: 15px;
+}
+.main-footer .back-to-top {
+  padding-top: 25px;
+  padding-right: 10px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
+
+
+
+  /* =================================
+      Media Queries
+  ==================================== */
+@media (max-width: 767px){
+
+    #contacts .main-nav{
+      display: none;
+    }
+
+}
+@media (min-width: 769px) {
+
+    .body {
+      margin: 0;
+    }
+
+    .main-header {
+
+      width: 100%;
+
+    }
+    .information {
+      float: left;
+      width: 50%;
+    }
+    .profile-image {
+      float: right;
+      width: 50%;
+
+    }
+    /* ---Mid Section ----*/
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .col {
+      float: left;
+    }
+
+    .primary,
+    .secondary,
+    .tertiary,
+    .fourth,
+    .fifth,
+    .sixth {
+      width: 50%;
+    }
+
+    .skills {
+      width: 100%;
+      margin: 0 auto;
+
+    }
+
+    .html,
+    .css3,
+    .java,
+    .python {
+      width: 50%;
+      float: left;
+    }
+
+
+  /* ---Navigation ----*/
+
+    .main-nav {
+      float: none;
+    }
+
+    .main-nav li {
+      display: inline-block;
+      margin-left: 15px;
+      background: #0C374D;
+
+    }
+    .main-nav li a {
+      color: #fff;
+    }
+
+    #contacts .main-nav {
+      float: right;
+    }
+    #contacts .main-nav li {
+      display: inline-block;
+      margin-left: 10px;
+
+    }
+
+    #contacts .back-to-top {
+      display: none;
+    }
+
+  /* ---- Float Clearfix ---- */
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  /* .main-header {
+    background:#0C374D;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba (0,0,0, .4);
+  } */
+
+  .container {
+    width: 95%;
+    max-width: 1650px;
+  }
+  .col {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .primary,
+  .secondary,
+  .tertiary,
+  .fourth,
+  .fifth,
+  .sixth {
+    width: 33.3%;
+  }
+
+  .name {
+    float: left;
+    padding-top: 30px;
+    padding-left: 100px;
+
+  }
+  .main-nav {
+    float: right;
+    margin-top: 25px;
+  }
+  .main-nav li{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 25px;
+
+  }
+
+
+  .introduction {
+    margin: 30px;
+    padding: 10px 20px 20px;
+    max-width: 1025px;
+    text-align: center;
+    color: #f8f929;
+    font-size: 1.2em;
+
+
+  }
+  .introduction {
+    position: relative;
+  }
+
+
+  .profile-image {
+    float: right;
+    width: 180px;
+    object-position:  50% 50%;
+    object-fit: none;
+
+    left: 35%;
+
+
+  }
+
+  .skills {
+    width: 95%;
+    max-width: 1650px;
+  }
+
+  .html,
+  .css3,
+  .java,
+  .python {
+    width: 25%;
+    float: left;
+  }
+
+}
