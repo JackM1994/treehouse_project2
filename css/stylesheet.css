@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: white;
   background: #0C374D;
@@ -214,19 +214,26 @@ img {
   padding-bottom: 15px;
 }
 
+#contacts .second-nav {
+  display: none;
 
+}
+#contacts .footer-name {
+  float: left;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.contact-info {
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+}
 
   /* =================================
       Media Queries
   ==================================== */
-@media (max-width: 767px){
 
-    #contacts .main-nav{
-      display: none;
-    }
-
-}
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     .body {
       margin: 0;
@@ -238,6 +245,7 @@ img {
 
     }
     .information {
+      text-align: left;
       float: left;
       width: 50%;
     }
@@ -295,16 +303,23 @@ img {
     .main-nav li a {
       color: #fff;
     }
-
-    #contacts .main-nav {
-      float: right;
+    #contacts .footer-name {
+      padding-left: 10px;
+      padding-top: 25px;
+      float: left;
     }
-    #contacts .main-nav li {
+
+    #contacts .second-nav {
+      display: inline;
+
+
+    }
+    #contacts .second-nav li {
       display: inline-block;
-      margin-left: 10px;
+      margin-top: 25px;
+      margin-left: 50px;
 
     }
-
     #contacts .back-to-top {
       display: none;
     }
@@ -317,13 +332,11 @@ img {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
-  /* .main-header {
-    background:#0C374D;
-    width: 100%;
-    box-shadow: 0 1px 4px rgba (0,0,0, .4);
-  } */
+  body {
+    margin: 0 auto;
+  }
 
   .container {
     width: 95%;
@@ -360,26 +373,9 @@ img {
 
   }
 
-
-  .introduction {
-    margin: 30px;
-    padding: 10px 20px 20px;
-    max-width: 1025px;
-    text-align: center;
-    color: #f8f929;
-    font-size: 1.2em;
-
-
-  }
-  .introduction {
-    position: relative;
-  }
-
-
   .profile-image {
     float: right;
     width: 400px;
-
 
 
   }
@@ -395,6 +391,10 @@ img {
   .python {
     width: 25%;
     float: left;
+  }
+  .second-nav {
+    float: right;
+    padding-right: 20px;
   }
 
 }
