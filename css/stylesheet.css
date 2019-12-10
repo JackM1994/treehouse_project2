@@ -236,7 +236,7 @@ img {
 @media (min-width: 768px) {
 
     .body {
-      margin: 0;
+      margin: 0 auto;
     }
 
     .main-header {
@@ -391,6 +391,7 @@ img {
   .python {
     width: 25%;
     float: left;
+    
   }
   .second-nav {
     float: right;
